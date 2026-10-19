@@ -16,13 +16,11 @@ This repository holds the downloads and the update feed for [ctrl+all](https://c
 4. Open the DMG and drag ctrl+all to Applications.
 5. Open ctrl+all from Applications.
 
-Apple has not notarized this beta, so macOS stops the app the first time. Do these steps one time:
+Since version 1.0.0 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it without a warning.
 
-1. When macOS says it cannot open the app, click **Done**. Do not click Move to Trash.
-2. Open **System Settings**, then **Privacy & Security**. Scroll to Security.
-3. Click **Open Anyway** next to ctrl+all. Enter your password or use Touch ID.
+**If macOS warns you that it cannot open the app, or says it is damaged, do not override the warning.** It means the file is not the one we published. Delete it and write to support@ctrlall.app.
 
-**Caution: do these steps only for a DMG whose checksum matches the one in `READ-ME-FIRST.txt`.**
+If you ran a beta build before 1.0.0, it cannot update itself to 1.0.0: the release key changed with the first production release. Download the 1.0.0 DMG, quit the beta, and drag the new app over the old one. Your chats and settings stay. macOS then asks once more for the microphone and for Files & Folders access, because the signing identity changed too.
 
 ## Updates
 
