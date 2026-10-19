@@ -46,6 +46,14 @@ It lists what it will remove and asks you to type `yes`. Then it removes the bac
 
 To also delete `~/.ctrlall` (chats, keys, and the judge model), add `--purge`.
 
+## Help
+
+Write to support@ctrlall.app. For a problem, run `ctrlall diagnose` first and attach the file it writes to your Desktop:
+
+```
+/Applications/ctrl+all.app/Contents/MacOS/ctrlall diagnose
+```
+
 ## Terms
 
 Read `BETA-TERMS.md` in the release before you use ctrl+all. It says what the beta protects, what it does not, and what leaves your Mac.
