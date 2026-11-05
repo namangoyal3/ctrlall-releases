@@ -42,7 +42,7 @@ It lists what it will remove and asks you to type `yes`. Then it removes the bac
 
 **Caution: `--purge` cannot be undone.**
 
-To also delete `~/.ctrlall` (chats, keys, and the judge model), add `--purge`.
+To also delete `~/.ctrlall` (chats and keys), add `--purge`.
 
 ## Help
 
