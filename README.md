@@ -1,26 +1,63 @@
-# ctrl+all releases
+<p align="center">
+  <a href="https://ctrlall.app"><img src="https://ctrlall.app/assets/og.png" alt="ctrl+all: coding agents, finally multiplayer. Product preview with a phone chat." width="960" /></a>
+</p>
 
-This repository holds the downloads and the update feed for [ctrl+all](https://ctrlall.app). It holds no source code.
+<h1 align="center">Multiplayer for humans + coding agents.</h1>
 
-## Requirements
+<p align="center">One shared flow. Your team. Your agents. Your phones.</p>
 
-- A Mac with macOS 14.5 or later. Apple silicon and Intel both work.
-- At least one agent CLI, signed in, such as Claude Code or Codex.
-- Your own account with that agent's vendor. ctrl+all does not supply model access.
+<p align="center"><a href="https://ctrlall.app"><strong>Download for Mac at ctrlall.app →</strong></a></p>
 
-## Install
+ctrl+all brings your teammates into the same coding-agent session. Run Claude Code or Codex on your Mac. Pair each teammate's phone, give them a role, and watch, steer and answer supported approvals together. Use the agent accounts you already pay for.
 
-1. Open the [latest release](https://github.com/namangoyal3/ctrlall-releases/releases/latest).
-2. Download `ctrl+all-<version>.dmg` and `READ-ME-FIRST.txt`.
-3. Check the checksum. `READ-ME-FIRST.txt` tells you how.
-4. Open the DMG and drag ctrl+all to Applications.
-5. Open ctrl+all from Applications.
+## Stop handing over prompts. Start working together.
 
-Since version 1.0.0 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it without a warning.
+Remote teamwork should not mean another call, a screen share, and a long explanation of what you told the agent. Keep the work in one shared session instead.
 
-**If macOS warns you that it cannot open the app, or says it is damaged, do not override the warning.** It means the file is not the one we published. Delete it and write to support@ctrlall.app.
+| Watch together | Steer together | Approve with a role |
+| :--- | :--- | :--- |
+| Follow the same chat, tool output and diffs from paired phones. | Send a task, redirect a running turn, or queue the next message. | Owners and operators answer supported requests. Viewers follow without controlling the agent. |
 
-If you ran a beta build before 1.0.0, it cannot update itself to 1.0.0: the release key changed with the first production release. Download the 1.0.0 DMG, quit the beta, and drag the new app over the old one. Your chats and settings stay. macOS then asks once more for the microphone and for Files & Folders access, because the signing identity changed too.
+**Your Mac runs the agents. Your phones are windows into the work.** The Mac must stay awake and online. ctrl+all does not provide model access or add per-token charges.
+
+## Try it with a teammate
+
+1. **Get the Mac app from [ctrlall.app](https://ctrlall.app).** The website is the download starting point.
+2. **Start one real task.** Choose a project and an available Claude Code or Codex installation. Sign in to your agent vendor if needed.
+3. **Pair your phone.** Scan the QR code, open the link in your browser, and approve the device on the Mac.
+4. **Bring someone in.** Give a teammate their own paired phone and a role. Watch the same work, send guidance, and try a supported approval.
+
+You need macOS 14.5 or later, an Apple silicon or Intel Mac, and an installed agent CLI with your own vendor account. The phone client runs in a browser; scanning the QR does not install a native app. On iPhone, adding it to the Home Screen is a separate Safari action.
+
+## What's available, and what isn't
+
+| Available today | Not a promise in the public app |
+| :--- | :--- |
+| Shared chats through individually paired phones; owner, operator and viewer roles | One-click public session join links and live presence |
+| Claude Code and Codex; other engine adapters are experimental | Identical support and permissions across every engine |
+| Phone chat, steering, and supported permission/question cards | Automatic Google-verified names on every prompt |
+| Goals, routines, project memory, and git review from paired devices | A public native iPhone + Apple Watch companion download |
+
+The hero above is a product preview, not evidence that every planned feature is released. Features on the main development branch can arrive before a signed public app update. Permission mode, device role and engine support still apply; multiplayer does not bypass them.
+
+## Help us test the shared flow
+
+Try one useful task, then repeat it with a teammate. Tell us:
+
+- Could both people find and follow the same work?
+- Was it clear who could send a task or approve a request?
+- Where did pairing, steering or reconnecting become confusing?
+- What forced you back to a call or screen share?
+
+Send feedback to [support@ctrlall.app](mailto:support@ctrlall.app). Never include keys, tokens, private prompts or source code in a public report.
+
+## Install safely
+
+Download only through [ctrlall.app](https://ctrlall.app), then open the disk image and drag ctrl+all to Applications. Open it from Applications, not from the disk image. Follow the verification instructions supplied with the download.
+
+Production releases from version 1.0.0 use Apple Developer ID signing and notarization. If macOS warns that the app is damaged or cannot be verified, do not bypass the warning. Delete the download and contact [support@ctrlall.app](mailto:support@ctrlall.app).
+
+If you still use a beta from before 1.0.0, get the current installer through the website, quit the beta and replace the app in Applications. Chats and settings stay; macOS may ask for permissions again because the signing identity changed.
 
 ## Updates
 
@@ -55,3 +92,7 @@ Write to support@ctrlall.app. For a problem, run `ctrlall diagnose` first and at
 ## Terms
 
 Read `BETA-TERMS.md` in the release before you use ctrl+all. It says what the beta protects, what it does not, and what leaves your Mac.
+
+## About this repository
+
+This repository stores release artifacts and the update feed. It is not the product download starting point. For installation and current product information, go to [ctrlall.app](https://ctrlall.app).
